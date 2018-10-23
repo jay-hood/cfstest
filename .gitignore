@@ -1,0 +1,5 @@
+#Ignore virtual environment
+venv/
+
+#Ignore system specific config files
+.ycm_extra_conf.py
