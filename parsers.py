@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
+
 import attr
 from nameparser import HumanName
-from lxml import html
+from lxml import html, etree
 from models import Candidate, Report, Office 
 import logging.config
 
@@ -22,19 +23,21 @@ class AbstractParser(ABC):
 class CandidateProfileParser(AbstractParser):
 
     def parse(self):
-        _xpath = "//*[@id='ctl00_ContentPlaceholder1_NameInfo1_dlDOIs']/tbody/tr[@class!=gridviewheader]"
+        xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs']/tbody/tr[@class!='gridviewheader']" 
         tree = html.fromstring(self.page_content)
-        body = tree.xpath(_xpath)
-        # returns a tuple consisting of the dropdown link and an office orm object.
+        # Body being generated with this xpath is empty list.
+        body = tree.xpath(xpath_)
         dropdown_links = []
         offices = []
-        if body is None:
-            return [(),]
+        if not body:
+            return [(None, None)]
         for tr in body:
             try:
+                
                 filer_id = tr.xpath('.//td[1]/text()').pop()
                 office_sought = tr.xpath('.//td[2]/span/text()').pop()
                 dropdown_link = tr.xpath('.//td[3]/a/@id').pop()
+                logging.info(f'Dropdown link: {dropdown_link}')
                 status = tr.xpath('.//td[4]/span/text()').pop()
                 office = Office(filer_id=filer_id, office_sought=office_sought, status=status)
                 offices.append(office)
@@ -42,48 +45,52 @@ class CandidateProfileParser(AbstractParser):
             except Exception as e:
                 logging.info(e)
 
-        return [(dropdown_link, office) for dropdown_link, office 
-                in zip(dropdown_links,offices)]
+        return ((dropdown_link, office) for dropdown_link, office 
+                in zip(dropdown_links, offices))
 
 class DropdownParser(AbstractParser):
 
     def parse(self): 
-        return 'ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_Label2'
+        xpath_ = '//*[@id="ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_Label2"]'
+        tree = html.fromstring(self.page_content)
+        body = tree.xpath(xpath_)
+        if not body:
+            return None
+        return 1
 
 class SearchResultsParser(AbstractParser):
 
     def parse(self):
-        _xpath = "//*[@id='ctl00_ContentPlaceHOlder1_Search_List']/tbody/tr[@class!='gridviewheader']"
+        xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_Search_List']/tbody/tr[@class!='gridviewheader']"
         # returns a list of parsed links containing the ids of candidate profile links
         tree = html.fromstring(self.page_content)
-        body = tree.xpath(_xpath)
+        body = tree.xpath(xpath_)
         candidates = []
         link_ids = []
         if body is None:
-            return [(),]
+            return [(None, None)]
         for tr in body:
             try:
-                js_id = tr.xpath('.//td[2]/span/text()').pop()
+                js_id = tr.xpath('.//td/a/@id').pop()
                 candidate_name = tr.xpath('.//td[2]/span/text()').pop()
                 name = HumanName(candidate_name)
-                candidate = Candidate(firstname=name.firstname, middlename=name.middlename, lastname=name.lastname)
+                candidate = Candidate(firstname=name.first, middlename=name.middle, lastname=name.last)
                 candidates.append(candidate)
                 link_ids.append(js_id)
             except Exception as e:
                 logging.info(e)
-
-        return [(cand, _id) for cand, _id in zip(candidates, link_ids)] 
+        return [(cand, link_id) for cand, link_id in zip(candidates, link_ids)] 
 
 class ReportsTableParser(AbstractParser):
 
     def parse(self):
-        _xpath = "//*[@id='ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports']/tbody/tr[@class!='gridviewheader']"
+        xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports']/tbody/tr[@class!='gridviewheader']"
         tree = html.fromstring(self.page_content)
-        body = tree.xpath(_xpath)
+        body = tree.xpath(xpath_)
         links = []
         reports = []
-        if body is None:
-            return [(),]
+        if not body:
+            return [(None, None)]
         for tr in body:
             try:
                 link = tr.xpath('.//td[1]/a/@id').pop()
@@ -101,5 +108,28 @@ class ReportsTableParser(AbstractParser):
                 reports.append(report)
             except Exception as e:
                 logging.info(e)
-            
-            return [(link, report) for link, report in zip(links, reports)]
+        return ((link, report) for link, report in zip(links, reports))
+
+class ContributionsViewParser(AbstractParser):
+    
+    def parse(self):
+        id_ = 'ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont'
+        xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont']"
+        tree = html.fromstring(self.page_content)
+        body = tree.xpath(xpath_)
+        if not body:
+            return None
+        return id_ 
+
+
+class CSVLinkParser(AbstractParser):
+    
+    def parse(self):
+        id_ = "ctl00_ContentPlaceHolder1_Campaign_ByContributions_RFResults2_Export"
+        xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_Campaign_ByContributions_RFResults2_Export']"
+        tree = html.fromstring(self.page_content)
+        body = tree.xpath(xpath_)
+        if not body:
+            return None
+        return id_
+

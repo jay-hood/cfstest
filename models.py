@@ -1,4 +1,4 @@
-from sqlalchemy import Table, Column, String, Integer, ForeignKey, create_engine 
+from sqlalchemy import Table, Column, String, Integer, ForeignKey, DateTime, create_engine 
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base 
 
@@ -32,6 +32,18 @@ class Report(Base):
     report_received_by = Column(String(45))
     report_received_date = Column(String(45))
     office_id = Column(Integer, ForeignKey('offices.id'))
+    url = Column(String(200))
+
+class ScrapeLog(Base):
+    __tablename__ = 'scrapelogs'
+    id = Column(Integer, primary_key=True)
+    scrape_date = Column(DateTime)
+    process_date = Column(DateTime)
+    raw_data = Column(String(2147483647))
+    page_url = Column(String(200))
+    candidate_id = Column(Integer, ForeignKey('candidates.id'))
+    report_id = Column(Integer, ForeignKey('reports.id'))
+
 
 if __name__ == '__main__':
     engine = create_engine('sqlite:///database.db')
