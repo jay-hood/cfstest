@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 
 import attr
 from nameparser import HumanName
-from lxml import html, etree
-from models import Candidate, Report, Office 
+from lxml import html
+from models import Candidate, Report, Office
 import logging.config
 
 loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
@@ -22,31 +22,47 @@ class AbstractParser(ABC):
 
 class CandidateProfileParser(AbstractParser):
 
-    def parse(self):
+    def status_to_int(self, status):
+        if status.lower == r'n\a':
+            return 0
+        elif status.lower == 'active':
+            return 1
+        elif status.lower == 'terminated':
+            return 2
+        else:
+            return 3
+
+    def parse(self, candidate):
         xpath_ = "//*[@id='ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs']/tbody/tr[@class!='gridviewheader']" 
         tree = html.fromstring(self.page_content)
         # Body being generated with this xpath is empty list.
         body = tree.xpath(xpath_)
-        dropdown_links = []
-        offices = []
+        dropdowns_list = []
+        candidates_list = []
+        offices_list = []
+        # This condition is specifically to handle Account, Deleted profiles.
         if not body:
-            return [(None, None)]
+            return [(None, 'No office.', candidate)]
         for tr in body:
             try:
-                
-                filer_id = tr.xpath('.//td[1]/text()').pop()
-                office_sought = tr.xpath('.//td[2]/span/text()').pop()
-                dropdown_link = tr.xpath('.//td[3]/a/@id').pop()
-                logging.info(f'Dropdown link: {dropdown_link}')
+                candidate_copy = copy.copy(candidate)
+                filer = tr.xpath('.//td[1]/text()').pop()
+                office_name = tr.xpath('.//td[2]/span/text()').pop()
+                dropdown = tr.xpath('.//td[3]/a/@id').pop()
                 status = tr.xpath('.//td[4]/span/text()').pop()
-                office = Office(filer_id=filer_id, office_sought=office_sought, status=status)
-                offices.append(office)
-                dropdown_links.append(dropdown_link)
+                dropdowns_list.append(dropdown)
+                offices_list.append(office)
+                candidate_copy.FilerId = filer
+                candidate_copy.CandidateStatus = self.status_to_int(status)
+                candidates_list.append(candidate_copy)
+                office = Office(Name=office_name)
+                offices_list.append(office)
             except Exception as e:
                 logging.info(e)
 
-        return ((dropdown_link, office) for dropdown_link, office 
-                in zip(dropdown_links, offices))
+        return ((dropdown, office, candidate) for dropdown, office, candidate 
+                in zip(dropdowns_list, offices_list, candidates_list))
+
 
 class DropdownParser(AbstractParser):
 
@@ -57,6 +73,7 @@ class DropdownParser(AbstractParser):
         if not body:
             return None
         return 1
+
 
 class SearchResultsParser(AbstractParser):
 
@@ -74,12 +91,44 @@ class SearchResultsParser(AbstractParser):
                 js_id = tr.xpath('.//td/a/@id').pop()
                 candidate_name = tr.xpath('.//td[2]/span/text()').pop()
                 name = HumanName(candidate_name)
-                candidate = Candidate(firstname=name.first, middlename=name.middle, lastname=name.last)
+                candidate = Candidate(Firstname=name.first, Middlename=name.middle, Lastname=name.last, Suffix=name.suffix)
                 candidates.append(candidate)
                 link_ids.append(js_id)
             except Exception as e:
                 logging.info(e)
         return [(cand, link_id) for cand, link_id in zip(candidates, link_ids)] 
+
+
+class CandidateRegistrationParser(AbstractParser):
+
+    def parse(self):
+        base = 'ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel2_lbl'
+        tree = html.fromstring(self.page_content)
+        street = base+'Address'
+        csz = base+'CSZ'
+        party = base+'PartyAffiliation'
+        committee = base+'ComName'
+        committee_info = tree.xpath(f'//*[@id="{committee}"]/text()')
+        party_info = tree.xpath(f"//*[@id='{party}']/text()")
+        street_info = tree.xpath(f"//*[@id='{street}']/text()")
+        csz_info = tree.xpath(f"//*[@id='{csz}']/text()")
+        party_text = 'No party given.'
+        street_text = 'No street given.'
+        csz_text = 'No city, state, or zip given.'
+        committee_text = 'No committee name given.'
+        try:
+            if party_info:
+                party_text = party_info.pop()
+            if street_info:
+                street_text = street_info.pop()
+            if csz:
+                csz_text = csz_info.pop()
+            if committee_info:
+                committee_text = committee_info.pop()
+        except Exception as e:
+            logging.info(e)
+        return (street_text + ' ' + csz_text, party_text, committee_text, 0, 'No election type given.')
+
 
 class ReportsTableParser(AbstractParser):
 
@@ -109,6 +158,7 @@ class ReportsTableParser(AbstractParser):
             except Exception as e:
                 logging.info(e)
         return ((link, report) for link, report in zip(links, reports))
+
 
 class ContributionsViewParser(AbstractParser):
     
