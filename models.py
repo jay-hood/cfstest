@@ -1,6 +1,5 @@
-from sqlalchemy import Column, Sequence, String, Numeric, Integer, ForeignKey, DateTime, create_engine
+from sqlalchemy import Column, Sequence, String, Numeric, Integer, ForeignKey, DateTime 
 from sqlalchemy.ext.declarative import declarative_base
-import psycopg2
 
 Base = declarative_base()
 
@@ -17,7 +16,7 @@ class Candidate(Base):
     Middlename = Column(String(500))
     Lastname = Column(String(500))
     Suffix = Column(String(100))
-    CommitteName = Column(String(45))
+    CommitteeName = Column(String(45))
     CandidateAddress = Column(String(100))
     Party = Column(String(45))
 
@@ -78,7 +77,7 @@ class Report(Base):
     ReportFiledDate = Column(String(45))
     ReportReceivedBy = Column(String(45))
     ReportReceivedDate = Column(String(45))
-    OfficeId = Column(Integer, ForeignKey('Office.OfficeId'))
+    CandidateId = Column(Integer, ForeignKey('Candidate.CandidateId'))
     Url = Column(String(200))
 
 
@@ -94,5 +93,11 @@ class ScrapeLog(Base):
 
 
 if __name__ == '__main__':
-    engine = create_engine('postgresql+psycopg2:///TestDB')
-    Base.metadata.create_all(engine)
+    try:
+        import psycopg2
+        from sqlalchemy import create_engine
+        # engine = create_engine('postgresql+psycopg2:///TestDB')
+        engine = create_engine('sqlite:///database.db')
+        Base.metadata.create_all(engine)
+    except Exception as e:
+        print(e)
