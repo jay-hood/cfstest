@@ -1,11 +1,12 @@
 # Relevant imports
 import attr
+import string
 from models import Office, Candidate, Report
 from navigator import SeleniumNavigator
-from parsers import (SearchResultsParser, 
-                     DropdownParser, 
+from parsers import (SearchResultsParser,
+                     DropdownParser,
                      CandidateProfileParser,
-                     CandidateRegistrationParser, 
+                     CandidateRegistrationParser,
                      ReportsTableParser)
 import logging.config
 loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
@@ -20,12 +21,12 @@ class FirstPassCrawler:
     navigator = attr.ib(init=False)
     
     def __attrs_post_init__(self):
-        self.search_results_urls = ['http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=q&FirstName=&Method=0',
-                                    'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=x&FirstName=&Method=0',
-                                    'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=z&FirstName=&Method=0']
-        # self.search_results_urls = (f'http://media.ethics.ga.gov/search/\
-        #        Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=\
-        #        {character}&FirstName=&Method=0' for character in string.ascii_lowercase)
+        #self.search_results_urls = ['http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=q&FirstName=&Method=0',
+        #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=x&FirstName=&Method=0',
+        #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=z&FirstName=&Method=0']
+        self.search_results_urls = (f'http://media.ethics.ga.gov/search/\
+                Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=\
+                {character}&FirstName=&Method=0' for character in string.ascii_lowercase)
         self.navigator = SeleniumNavigator()
 
     def exit(self):
@@ -54,7 +55,7 @@ class FirstPassCrawler:
             report = Report(**report)
             self.session.add(report)
             self.session.commit()
-            return report.ReportId 
+            return report.ReportId
         except Exception as e:
             logging.info(e)
             self.session.rollback()
