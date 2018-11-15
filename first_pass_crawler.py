@@ -22,10 +22,10 @@ class FirstPassCrawler:
     navigator = attr.ib(init=False)
     
     def __attrs_post_init__(self):
-        #self.search_results_urls = ['http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=q&FirstName=&Method=0',
+        self.search_results_urls = ['http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=a&FirstName=&Method=0']
         #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=x&FirstName=&Method=0',
         #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=z&FirstName=&Method=0']
-        self.search_results_urls = (f'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName={character}&FirstName=&Method=0' for character in string.ascii_lowercase)
+        #self.search_results_urls = (f'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName={character}&FirstName=&Method=0' for character in string.ascii_lowercase)
         self.navigator = SeleniumNavigator()
 
     def exit(self):
@@ -77,19 +77,21 @@ class FirstPassCrawler:
         dropdown = DropdownParser(self.navigator.page_source())
         if dropdown.parse() is not None:
             try:
-                self.navigator.click_dropdown_initial()
+                self.navigator.click_dropdown()
                 parser = ReportsTableParser(self.navigator.page_source())
                 for report_link, report in parser.parse():
                     try:
+                        self.navigator.wait_for_it(report_link)
                         self.navigator.click_link(report_link)
                         self.navigator.wait_for_contributions_id()
                         report['CandidateId'] = candidate_id
                         report['Url'] = self.navigator.get_current_url()
                         self.get_or_add_report(report)
                         self.navigator.back()
-                        self.navigator.click_dropdown_subsequent()
+                        self.navigator.click_dropdown()
                     except Exception as e:
                         logging.info(e)
+                        logging.info(f'Report link id: {report_link}')
             except Exception as e:
                 logging.info(e)
 
@@ -104,8 +106,10 @@ class FirstPassCrawler:
         parser = CandidateProfileParser(self.navigator.page_source())
         for dropdown, office, current_candidate in parser.parse(candidate):
             if dropdown is None:
+                logging.info(f"No dropdown for {current_candidate['Firstname']} "
+                             f"{current_candidate['Lastname']}")
                 office_id = self.get_or_add_office(office)
-                current_candidate.OfficeId = office_id
+                current_candidate['OfficeId'] = office_id
                 self.crawl_registration_info(current_candidate)
                 continue
             office_id = self.get_or_add_office(office)
@@ -125,10 +129,15 @@ class FirstPassCrawler:
         for candidate, current_link in parser.parse():
             if current_link is None:
                 continue
-            self.navigator.click_link(current_link)
+            logging.info(f"Navigating to {candidate['Firstname']} "
+                         f"{candidate['Lastname']}")
             try:
+                self.navigator.wait_for_it(current_link)
+                self.navigator.click_link(current_link)
                 self.crawl_candidate_profile(url, candidate)
             except Exception as e:
+                # Maybe include a self.navigator.navigate(url) call here in
+                # case page doesn't load correctly
                 logging.info(e)
 
 # 0
