@@ -9,7 +9,8 @@ from parsers import (SearchResultsParser,
                      CandidateRegistrationParser,
                      ReportsTableParser)
 import logging.config
-loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
+import os
+loginipath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'logging_config.ini'))
 logging.config.fileConfig(loginipath)
 logger = logging.getLogger('sLogger')
 
@@ -24,9 +25,7 @@ class FirstPassCrawler:
         #self.search_results_urls = ['http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=q&FirstName=&Method=0',
         #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=x&FirstName=&Method=0',
         #                            'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=z&FirstName=&Method=0']
-        self.search_results_urls = (f'http://media.ethics.ga.gov/search/\
-                Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName=\
-                {character}&FirstName=&Method=0' for character in string.ascii_lowercase)
+        self.search_results_urls = (f'http://media.ethics.ga.gov/search/Campaign/Campaign_Namesearchresults.aspx?CommitteeName=&LastName={character}&FirstName=&Method=0' for character in string.ascii_lowercase)
         self.navigator = SeleniumNavigator()
 
     def exit(self):

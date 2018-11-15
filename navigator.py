@@ -1,4 +1,5 @@
 import attr
+import os
 from driver_config import DriverConfig 
 import logging.config
 from selenium.webdriver.support.ui import WebDriverWait as WDW 
@@ -7,7 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains as AC
 import time
 
-loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
+loginipath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'logging_config.ini'))
+
 logging.config.fileConfig(loginipath)
 logger = logging.getLogger('sLogger')
 

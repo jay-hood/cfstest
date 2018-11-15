@@ -5,8 +5,9 @@ from nameparser import HumanName
 from lxml import html
 from models import Candidate, Report, Office
 import logging.config
+import os
 
-loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
+loginipath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'logging_config.ini'))
 logging.config.fileConfig(loginipath)
 logger = logging.getLogger('sLogger')
 

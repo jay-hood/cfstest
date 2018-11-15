@@ -3,3 +3,7 @@ venv/
 
 #Ignore system specific config files
 .ycm_extra_conf.py
+
+#Ignore pycharm config files
+*.xml
+.idea/

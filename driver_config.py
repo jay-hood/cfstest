@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import os
 import logging.config
-loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
+loginipath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'logging_config.ini'))
 logging.config.fileConfig(loginipath)
 logger = logging.getLogger('sLogger')
 

@@ -4,8 +4,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker 
 from first_pass_crawler import FirstPassCrawler as FPC
 import logging.config
+import os
 
-loginipath = '/home/jay/projects/python_projects/revised-cfs/logging_config.ini'
+loginipath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'logging_config.ini'))
 logging.config.fileConfig(loginipath)
 logger = logging.getLogger('sLogger')
 
