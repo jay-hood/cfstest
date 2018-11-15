@@ -7,3 +7,6 @@ venv/
 #Ignore pycharm config files
 *.xml
 .idea/
+
+#Igore pycache
+__pycache__/
