@@ -1,4 +1,5 @@
 # Relevant imports
+
 import attr
 import string
 from models import Office, Candidate, Report
@@ -80,6 +81,9 @@ class FirstPassCrawler:
                 self.navigator.click_dropdown()
                 parser = ReportsTableParser(self.navigator.page_source())
                 for report_link, report in parser.parse():
+                    if report_link is None:
+                        logging.info('No report found.')
+                        continue
                     try:
                         self.navigator.wait_for_it(report_link)
                         self.navigator.click_link(report_link)
@@ -126,7 +130,22 @@ class FirstPassCrawler:
     def crawl_candidate_profile_links(self, url):
         self.navigator.navigate(url)
         parser = SearchResultsParser(self.navigator.page_source())
+        #    'Middlename': '',
+        #    'Lastname': 'Stovall',
+        #    'Suffix': '',
+        #    'FilerId': 'No filer id',
+        #    'OfficeId': 0,
+        #    'CandidateStatus': 0,
+        #    'ElectionType': 0,
+        #    'ElectionYear': 0
+        #}
+        #current_link = 'ctl00_ContentPlaceHolder1_Search_List_ctl483_lnkViewID'
+        #test = [(candidate, current_link)]
+        #result_set = parser.parse()
+        #for i in range(480, 485):
+        #candidate, current_link = result_set[i]
         for candidate, current_link in parser.parse():
+        # for candidate, current_link in test:
             if current_link is None:
                 continue
             logging.info(f"Navigating to {candidate['Firstname']} "

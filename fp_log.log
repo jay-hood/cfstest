@@ -1,2 +1,679 @@
-2018-11-15 14:03:45,860,860 DEBUG    [functionality_test.py:10] File message one
-2018-11-15 14:03:45,860,860 INFO     [functionality_test.py:11] Stream message one
+2018-11-16 14:43:41,831,831 INFO     [app.py:19] Initializing crawler.
+2018-11-16 14:43:43,079,79 INFO     [app.py:21] Crawling...
+2018-11-16 14:43:45,333,333 INFO     [first_pass_crawler.py:146] Navigating to Angela Stovall
+2018-11-16 14:43:52,871,871 INFO     [app.py:23] Crawler exiting.
+2018-11-16 14:46:06,993,993 INFO     [app.py:19] Initializing crawler.
+2018-11-16 14:46:08,242,242 INFO     [app.py:21] Crawling...
+2018-11-16 14:46:11,224,224 INFO     [first_pass_crawler.py:146] Navigating to A A
+2018-11-16 14:46:16,876,876 INFO     [first_pass_crawler.py:146] Navigating to a a
+2018-11-16 14:46:22,041,41 INFO     [first_pass_crawler.py:146] Navigating to Charles Aaron
+2018-11-16 14:46:25,559,559 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:46:35,676,676 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:46:35,677,677 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:46:35,710,710 DEBUG    [navigator.py:34] Message: element not visible
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:46:35,710,710 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:46:46,177,177 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:46:46,177,177 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:46:48,658,658 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:46:50,057,57 INFO     [first_pass_crawler.py:146] Navigating to Dawson Aaron
+2018-11-16 14:46:55,660,660 INFO     [first_pass_crawler.py:146] Navigating to Presley Aaron
+2018-11-16 14:47:02,230,230 INFO     [first_pass_crawler.py:146] Navigating to Betty Aaron
+2018-11-16 14:47:07,519,519 INFO     [first_pass_crawler.py:146] Navigating to Louisa Abbot
+2018-11-16 14:47:11,265,265 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:47:21,603,603 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:47:21,604,604 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:47:21,667,667 DEBUG    [navigator.py:34] Message: element not visible
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:47:21,667,667 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:47:32,144,144 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:47:32,144,144 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:47:35,156,156 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:47:45,563,563 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:47:45,563,563 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 14:47:45,589,589 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:47:45,589,589 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 14:47:56,047,47 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:47:56,047,47 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:47:56,432,432 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:48:06,896,896 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:48:06,896,896 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 14:48:06,920,920 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:48:06,921,921 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 14:48:17,413,413 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:48:17,413,413 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:48:18,300,300 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:48:28,770,770 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:48:28,771,771 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 14:48:28,800,800 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:48:28,800,800 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 14:48:39,239,239 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:48:39,240,240 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:48:39,477,477 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:48:49,945,945 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:48:49,945,945 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl06_View
+2018-11-16 14:48:49,974,974 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl06_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:48:49,975,975 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl06_View
+2018-11-16 14:49:00,429,429 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:00,429,429 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:49:01,320,320 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:49:11,768,768 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:11,768,768 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl07_View
+2018-11-16 14:49:11,795,795 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl07_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:49:11,795,795 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl07_View
+2018-11-16 14:49:22,288,288 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:22,288,288 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:49:22,560,560 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:49:33,010,10 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:33,010,10 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl08_View
+2018-11-16 14:49:33,037,37 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl08_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:49:33,038,38 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl08_View
+2018-11-16 14:49:43,500,500 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:43,501,501 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:49:44,369,369 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:49:54,821,821 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:49:54,821,821 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl09_View
+2018-11-16 14:49:54,836,836 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl09_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:49:54,836,836 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl09_View
+2018-11-16 14:50:05,289,289 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:50:05,290,290 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:50:05,741,741 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:52:10,589,589 INFO     [app.py:19] Initializing crawler.
+2018-11-16 14:52:11,836,836 INFO     [app.py:21] Crawling...
+2018-11-16 14:52:15,107,107 INFO     [first_pass_crawler.py:161] name 'parser' is not defined
+2018-11-16 14:52:15,165,165 INFO     [app.py:23] Crawler exiting.
+2018-11-16 14:52:44,435,435 INFO     [app.py:19] Initializing crawler.
+2018-11-16 14:52:45,694,694 INFO     [app.py:21] Crawling...
+2018-11-16 14:52:48,034,34 INFO     [first_pass_crawler.py:144] Navigating to A A
+2018-11-16 14:52:54,011,11 INFO     [first_pass_crawler.py:144] Navigating to a a
+2018-11-16 14:52:59,408,408 INFO     [first_pass_crawler.py:144] Navigating to Charles Aaron
+2018-11-16 14:53:02,978,978 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:53:13,396,396 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:53:13,397,397 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:53:13,431,431 DEBUG    [navigator.py:34] Message: element not visible
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:53:13,432,432 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:53:23,853,853 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:53:23,854,854 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:53:26,004,4 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:53:27,920,920 INFO     [first_pass_crawler.py:144] Navigating to Dawson Aaron
+2018-11-16 14:53:33,148,148 INFO     [first_pass_crawler.py:144] Navigating to Presley Aaron
+2018-11-16 14:53:38,590,590 INFO     [first_pass_crawler.py:144] Navigating to Betty Aaron
+2018-11-16 14:53:44,212,212 INFO     [first_pass_crawler.py:144] Navigating to Louisa Abbot
+2018-11-16 14:53:48,747,747 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:53:59,149,149 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:53:59,149,149 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:53:59,216,216 DEBUG    [navigator.py:34] Message: element not visible
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:53:59,216,216 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 14:54:09,663,663 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:54:09,664,664 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:54:11,670,670 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:54:22,123,123 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:54:22,124,124 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 14:54:22,132,132 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:54:22,132,132 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 14:54:32,578,578 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:54:32,579,579 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:54:32,839,839 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 14:54:43,347,347 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:54:43,348,348 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 14:54:43,373,373 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 14:54:43,373,373 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 14:54:53,825,825 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 14:54:53,825,825 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_
+2018-11-16 14:54:54,562,562 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 15:00:26,273,273 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:00:27,530,530 INFO     [app.py:21] Crawling...
+2018-11-16 15:00:29,889,889 INFO     [first_pass_crawler.py:144] Navigating to A A
+2018-11-16 15:00:36,140,140 INFO     [first_pass_crawler.py:144] Navigating to a a
+2018-11-16 15:00:41,393,393 INFO     [first_pass_crawler.py:144] Navigating to Charles Aaron
+2018-11-16 15:00:53,696,696 INFO     [first_pass_crawler.py:144] Navigating to Dawson Aaron
+2018-11-16 15:00:58,865,865 INFO     [first_pass_crawler.py:144] Navigating to Presley Aaron
+2018-11-16 15:01:04,565,565 INFO     [first_pass_crawler.py:144] Navigating to Betty Aaron
+2018-11-16 15:01:09,982,982 INFO     [first_pass_crawler.py:144] Navigating to Louisa Abbot
+2018-11-16 15:01:25,956,956 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:01:25,956,956 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:01:25,995,995 DEBUG    [navigator.py:34] Message: element not visible
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:01:25,995,995 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:01:36,437,437 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:01:36,437,437 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont
+2018-11-16 15:01:38,907,907 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 15:01:49,340,340 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:01:49,340,340 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:01:49,366,366 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:01:49,366,366 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:01:59,813,813 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:01:59,813,813 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont
+2018-11-16 15:02:00,047,47 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 15:02:10,500,500 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:02:10,501,501 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:02:10,517,517 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:02:10,517,517 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:02:20,925,925 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:02:20,925,925 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont
+2018-11-16 15:02:21,667,667 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 15:02:32,103,103 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:02:32,104,104 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:02:32,129,129 DEBUG    [navigator.py:34] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:02:32,129,129 INFO     [navigator.py:35] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:02:42,583,583 DEBUG    [navigator.py:44] Message: 
+
+2018-11-16 15:02:42,583,583 INFO     [navigator.py:45] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont
+2018-11-16 15:02:42,951,951 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 15:04:00,824,824 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:04:02,088,88 INFO     [app.py:21] Crawling...
+2018-11-16 15:04:04,341,341 INFO     [first_pass_crawler.py:144] Navigating to A A
+2018-11-16 15:04:10,134,134 INFO     [first_pass_crawler.py:144] Navigating to a a
+2018-11-16 15:04:16,590,590 INFO     [first_pass_crawler.py:144] Navigating to Charles Aaron
+2018-11-16 15:04:28,462,462 INFO     [first_pass_crawler.py:144] Navigating to Dawson Aaron
+2018-11-16 15:04:34,966,966 INFO     [first_pass_crawler.py:144] Navigating to Presley Aaron
+2018-11-16 15:04:40,697,697 INFO     [first_pass_crawler.py:144] Navigating to Betty Aaron
+2018-11-16 15:04:46,931,931 INFO     [first_pass_crawler.py:144] Navigating to Louisa Abbot
+2018-11-16 15:06:48,347,347 INFO     [first_pass_crawler.py:144] Navigating to David Abbott
+2018-11-16 15:07:03,395,395 INFO     [first_pass_crawler.py:144] Navigating to Heather Abbott
+2018-11-16 15:07:25,855,855 INFO     [first_pass_crawler.py:144] Navigating to Robert Abbott
+2018-11-16 15:08:09,190,190 INFO     [first_pass_crawler.py:144] Navigating to Robert Abbott
+2018-11-16 15:08:44,128,128 INFO     [first_pass_crawler.py:144] Navigating to Roy Abbott
+2018-11-16 15:08:50,131,131 INFO     [first_pass_crawler.py:144] Navigating to ROBERT ABBOTT
+2018-11-16 15:09:11,306,306 INFO     [first_pass_crawler.py:144] Navigating to Roberta Abdul-Salaam
+2018-11-16 15:09:15,595,595 DEBUG    [navigator.py:45] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:09:15,595,595 INFO     [navigator.py:46] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl03_lnkReportInfo_DOI
+2018-11-16 15:09:18,192,192 INFO     [first_pass_crawler.py:144] Navigating to ROBERTA ABDUL-SALAAM
+2018-11-16 15:09:23,908,908 INFO     [first_pass_crawler.py:144] Navigating to Jeffrey Abel
+2018-11-16 15:09:29,749,749 INFO     [first_pass_crawler.py:144] Navigating to Alexander Abell
+2018-11-16 15:09:35,292,292 INFO     [first_pass_crawler.py:144] Navigating to David Abercrombie
+2018-11-16 15:09:40,821,821 INFO     [first_pass_crawler.py:144] Navigating to Jesse Abercrombie
+2018-11-16 15:10:06,164,164 INFO     [first_pass_crawler.py:144] Navigating to James Abernathy
+2018-11-16 15:10:34,123,123 INFO     [first_pass_crawler.py:144] Navigating to Tonya Abernathy
+2018-11-16 15:11:08,589,589 INFO     [first_pass_crawler.py:144] Navigating to Tonya Abernathy
+2018-11-16 15:11:14,060,60 INFO     [first_pass_crawler.py:144] Navigating to Kwame Abernathy
+2018-11-16 15:11:20,071,71 INFO     [first_pass_crawler.py:144] Navigating to Michael Abernathy
+2018-11-16 15:11:42,028,28 INFO     [first_pass_crawler.py:144] Navigating to Michael Abernathy
+2018-11-16 15:11:58,088,88 INFO     [first_pass_crawler.py:144] Navigating to Leslie Abernathy- Maddox
+2018-11-16 15:12:13,362,362 INFO     [first_pass_crawler.py:144] Navigating to Yvette Abrahamson
+2018-11-16 15:12:16,906,906 DEBUG    [navigator.py:37] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:12:16,906,906 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl02_lnkReportInfo_DOI
+2018-11-16 15:12:19,950,950 INFO     [first_pass_crawler.py:144] Navigating to Zanda Abram
+2018-11-16 15:12:25,898,898 INFO     [first_pass_crawler.py:144] Navigating to George Abrams
+2018-11-16 15:12:31,958,958 INFO     [first_pass_crawler.py:144] Navigating to Stacey Abrams
+2018-11-16 15:12:38,661,661 INFO     [first_pass_crawler.py:144] Navigating to Lucious Abrams
+2018-11-16 15:13:19,632,632 INFO     [first_pass_crawler.py:144] Navigating to DELET ACCOUNT
+2018-11-16 15:13:25,403,403 INFO     [first_pass_crawler.py:144] Navigating to Delete account
+2018-11-16 15:13:28,237,237 INFO     [first_pass_crawler.py:109] No dropdown for Delete account
+2018-11-16 15:13:29,825,825 INFO     [first_pass_crawler.py:144] Navigating to delete account
+2018-11-16 15:13:32,592,592 INFO     [first_pass_crawler.py:109] No dropdown for delete account
+2018-11-16 15:13:34,145,145 INFO     [first_pass_crawler.py:144] Navigating to Delete Account
+2018-11-16 15:13:37,273,273 INFO     [first_pass_crawler.py:109] No dropdown for Delete Account
+2018-11-16 15:13:38,932,932 INFO     [first_pass_crawler.py:144] Navigating to delete account
+2018-11-16 15:13:42,142,142 INFO     [first_pass_crawler.py:109] No dropdown for delete account
+2018-11-16 15:13:44,314,314 INFO     [first_pass_crawler.py:144] Navigating to delete account
+2018-11-16 15:13:47,521,521 INFO     [first_pass_crawler.py:109] No dropdown for delete account
+2018-11-16 15:13:49,013,13 INFO     [first_pass_crawler.py:144] Navigating to duplicate account
+2018-11-16 15:13:52,196,196 INFO     [first_pass_crawler.py:109] No dropdown for duplicate account
+2018-11-16 15:13:54,234,234 INFO     [first_pass_crawler.py:144] Navigating to empty account
+2018-11-16 15:14:00,216,216 INFO     [first_pass_crawler.py:144] Navigating to Empty Account
+2018-11-16 15:14:06,405,405 INFO     [first_pass_crawler.py:144] Navigating to empty account
+2018-11-16 15:14:12,142,142 INFO     [first_pass_crawler.py:144] Navigating to delete acct
+2018-11-16 15:14:18,264,264 INFO     [first_pass_crawler.py:144] Navigating to dup acct
+2018-11-16 15:14:24,726,726 INFO     [first_pass_crawler.py:144] Navigating to ALGERNON ACEY
+2018-11-16 15:14:30,830,830 INFO     [first_pass_crawler.py:144] Navigating to Paul Achey
+2018-11-16 15:14:49,721,721 INFO     [first_pass_crawler.py:144] Navigating to William Ackworth
+2018-11-16 15:15:02,141,141 INFO     [first_pass_crawler.py:144] Navigating to Virgina Acord
+2018-11-16 15:15:31,427,427 INFO     [first_pass_crawler.py:144] Navigating to Michael Acree
+2018-11-16 15:15:37,521,521 INFO     [first_pass_crawler.py:144] Navigating to Kim Acres
+2018-11-16 15:15:43,976,976 INFO     [first_pass_crawler.py:144] Navigating to s Ada
+2018-11-16 15:15:49,417,417 INFO     [first_pass_crawler.py:144] Navigating to JANET ADAIR
+2018-11-16 15:15:55,331,331 INFO     [first_pass_crawler.py:144] Navigating to Carly Adam
+2018-11-16 15:16:01,223,223 INFO     [first_pass_crawler.py:144] Navigating to Mitchell Adam
+2018-11-16 15:16:07,311,311 INFO     [first_pass_crawler.py:144] Navigating to Timmy Adam
+2018-11-16 15:16:13,155,155 INFO     [first_pass_crawler.py:144] Navigating to A. Adams
+2018-11-16 15:17:24,006,6 INFO     [first_pass_crawler.py:144] Navigating to Andy Adams
+2018-11-16 15:17:39,433,433 INFO     [first_pass_crawler.py:144] Navigating to Ashley Adams
+2018-11-16 15:18:13,401,401 INFO     [first_pass_crawler.py:144] Navigating to Billy Adams
+2018-11-16 15:18:19,545,545 INFO     [first_pass_crawler.py:144] Navigating to BRADLEY ADAMS
+2018-11-16 15:18:25,498,498 INFO     [first_pass_crawler.py:144] Navigating to Bret Adams
+2018-11-16 15:18:31,149,149 INFO     [first_pass_crawler.py:144] Navigating to Chandon Adams
+2018-11-16 15:18:37,231,231 INFO     [first_pass_crawler.py:144] Navigating to Cynthia Adams
+2018-11-16 15:19:00,457,457 INFO     [first_pass_crawler.py:144] Navigating to Dorothy Adams
+2018-11-16 15:19:07,190,190 INFO     [first_pass_crawler.py:144] Navigating to Franklin Adams
+2018-11-16 15:19:22,810,810 INFO     [first_pass_crawler.py:144] Navigating to Franklin Adams
+2018-11-16 15:19:38,194,194 INFO     [first_pass_crawler.py:144] Navigating to G.E. Adams
+2018-11-16 15:20:25,795,795 INFO     [first_pass_crawler.py:144] Navigating to Gregory Adams
+2018-11-16 15:20:40,840,840 INFO     [first_pass_crawler.py:144] Navigating to Gregory Adams
+2018-11-16 15:21:12,200,200 INFO     [first_pass_crawler.py:144] Navigating to Gregory Adams
+2018-11-16 15:21:17,810,810 INFO     [first_pass_crawler.py:144] Navigating to Gregory Adams
+2018-11-16 15:21:23,396,396 INFO     [first_pass_crawler.py:144] Navigating to Henry Adams
+2018-11-16 15:21:44,407,407 INFO     [first_pass_crawler.py:144] Navigating to Jacqueline Adams
+2018-11-16 15:22:09,196,196 INFO     [first_pass_crawler.py:144] Navigating to James Adams
+2018-11-16 15:22:14,658,658 INFO     [first_pass_crawler.py:144] Navigating to Jason Adams
+2018-11-16 15:22:45,241,241 INFO     [first_pass_crawler.py:144] Navigating to Jeff Adams
+2018-11-16 15:22:50,612,612 INFO     [first_pass_crawler.py:144] Navigating to JEREMY ADAMS
+2018-11-16 15:23:15,523,523 INFO     [first_pass_crawler.py:144] Navigating to Jesse Adams
+2018-11-16 15:24:51,464,464 INFO     [first_pass_crawler.py:144] Navigating to Jimmy Adams
+2018-11-16 15:25:17,775,775 DEBUG    [navigator.py:45] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:25:17,775,775 INFO     [navigator.py:46] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl02_lnkReportInfo_DOI
+2018-11-16 15:25:53,985,985 INFO     [first_pass_crawler.py:144] Navigating to JOHN ADAMS
+2018-11-16 15:26:33,684,684 INFO     [first_pass_crawler.py:144] Navigating to Johnny Adams
+2018-11-16 15:26:52,905,905 DEBUG    [navigator.py:45] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:26:52,906,906 INFO     [navigator.py:46] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl02_lnkReportInfo_DOI
+2018-11-16 15:27:12,378,378 INFO     [first_pass_crawler.py:144] Navigating to Johnny Adams
+2018-11-16 15:27:28,393,393 DEBUG    [navigator.py:37] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:27:28,394,394 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl02_lnkReportInfo_DOI
+2018-11-16 15:28:18,890,890 INFO     [first_pass_crawler.py:144] Navigating to Jonathan Adams
+2018-11-16 15:29:56,751,751 INFO     [first_pass_crawler.py:144] Navigating to Joseph Adams
+2018-11-16 15:30:35,171,171 INFO     [first_pass_crawler.py:144] Navigating to Kathy Adams
+2018-11-16 15:31:52,196,196 INFO     [first_pass_crawler.py:144] Navigating to Kimberly Adams
+2018-11-16 15:32:34,712,712 INFO     [first_pass_crawler.py:144] Navigating to Kimberly Adams
+2018-11-16 15:33:12,254,254 INFO     [first_pass_crawler.py:144] Navigating to Leland Adams
+2018-11-16 15:33:43,266,266 DEBUG    [navigator.py:45] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:33:43,267,267 INFO     [navigator.py:46] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl02_lnkReportInfo_DOI
+2018-11-16 15:33:50,073,73 INFO     [first_pass_crawler.py:144] Navigating to Lisa Adams
+2018-11-16 15:40:05,847,847 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:40:08,085,85 INFO     [app.py:21] Crawling...
+2018-11-16 15:40:13,146,146 INFO     [first_pass_crawler.py:165] 'list' object is not callable
+2018-11-16 15:40:13,254,254 INFO     [app.py:23] Crawler exiting.
+2018-11-16 15:40:31,520,520 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:40:33,760,760 INFO     [app.py:21] Crawling...
+2018-11-16 15:40:38,966,966 INFO     [first_pass_crawler.py:148] Navigating to Herman Andrews
+2018-11-16 15:40:58,651,651 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:40:58,652,652 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:40:58,702,702 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:40:58,703,703 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:09,111,111 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:41:09,112,112 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:09,160,160 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:41:09,161,161 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:19,570,570 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:41:19,571,571 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:19,625,625 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:41:19,626,626 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:30,047,47 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:41:30,047,47 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:41:30,096,96 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:41:30,097,97 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:43:33,029,29 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:43:33,030,30 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:43:33,086,86 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:43:33,086,86 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:43:43,504,504 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:43:43,505,505 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:43:43,554,554 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:43:43,555,555 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:43:53,966,966 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:43:53,967,967 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:43:54,016,16 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:43:54,016,16 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:44:04,424,424 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:44:04,425,425 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:44:04,479,479 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:44:04,479,479 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl02_View
+2018-11-16 15:44:20,649,649 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:44:20,650,650 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:20,698,698 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:44:20,699,699 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:31,139,139 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:44:31,140,140 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:31,190,190 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:44:31,191,191 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:41,718,718 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:44:41,719,719 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:41,798,798 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:44:41,799,799 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:52,142,142 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:44:52,143,143 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:44:52,221,221 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:44:52,222,222 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl03_View
+2018-11-16 15:45:10,526,526 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:45:10,526,526 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:10,573,573 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:45:10,573,573 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:21,046,46 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:45:21,046,46 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:21,094,94 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:45:21,094,94 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:31,521,521 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:45:31,521,521 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:31,572,572 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:45:31,573,573 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:41,982,982 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:45:41,983,983 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:42,042,42 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:45:42,042,42 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl04_View
+2018-11-16 15:45:58,516,516 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:45:58,517,517 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:45:58,565,565 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:45:58,566,566 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:09,084,84 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:46:09,085,85 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:09,132,132 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:46:09,133,133 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:19,575,575 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:46:19,576,576 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:19,629,629 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:46:19,629,629 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:29,638,638 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:46:29,638,638 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:29,690,690 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:46:29,692,692 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_TabContainer1_TabPanel1_dgReports_ctl05_View
+2018-11-16 15:46:38,030,30 INFO     [first_pass_crawler.py:148] Navigating to TITUS ANDREWS
+2018-11-16 15:46:57,753,753 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:46:57,754,754 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:46:57,804,804 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:46:57,804,804 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:08,224,224 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:47:08,225,225 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:08,280,280 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:47:08,280,280 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:18,689,689 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:47:18,690,690 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:18,737,737 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:47:18,737,737 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:29,150,150 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:47:29,151,151 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:47:29,198,198 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID"}
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:47:29,198,198 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl478_lnkViewID
+2018-11-16 15:49:43,912,912 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:49:48,016,16 INFO     [app.py:21] Crawling...
+2018-11-16 15:49:53,335,335 INFO     [first_pass_crawler.py:148] Navigating to Herman Andrews
+2018-11-16 15:50:13,116,116 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:50:13,117,117 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:50:13,164,164 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:50:13,165,165 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:50:23,581,581 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:50:23,582,582 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:50:23,631,631 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:50:23,632,632 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:55:15,320,320 INFO     [app.py:19] Initializing crawler.
+2018-11-16 15:55:19,410,410 INFO     [app.py:21] Crawling...
+2018-11-16 15:55:24,598,598 INFO     [first_pass_crawler.py:148] Navigating to Herman Andrews
+2018-11-16 15:55:44,585,585 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 15:55:44,586,586 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 15:55:44,637,637 DEBUG    [navigator.py:47] Message: no such element: Unable to locate element: {"method":"id","selector":"ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 15:55:44,638,638 INFO     [navigator.py:48] Element id: ctl00_ContentPlaceHolder1_Search_List_ctl477_lnkViewID
+2018-11-16 16:01:12,454,454 INFO     [app.py:19] Initializing crawler.
+2018-11-16 16:01:16,401,401 INFO     [app.py:21] Crawling...
+2018-11-16 16:01:21,661,661 INFO     [first_pass_crawler.py:148] Navigating to Herman Andrews
+2018-11-16 16:02:19,542,542 INFO     [app.py:19] Initializing crawler.
+2018-11-16 16:02:21,783,783 INFO     [app.py:21] Crawling...
+2018-11-16 16:02:26,999,999 INFO     [first_pass_crawler.py:148] Navigating to Herman Andrews
+2018-11-16 16:03:06,262,262 INFO     [first_pass_crawler.py:148] Navigating to TITUS ANDREWS
+2018-11-16 16:03:17,068,68 INFO     [first_pass_crawler.py:148] Navigating to Titus Andrews
+2018-11-16 16:03:48,647,647 INFO     [first_pass_crawler.py:148] Navigating to Lisa Anfield
+2018-11-16 16:04:59,469,469 INFO     [first_pass_crawler.py:148] Navigating to Walter Angel
+2018-11-16 16:05:07,876,876 INFO     [first_pass_crawler.py:148] Navigating to Walter Angel
+2018-11-16 16:06:13,909,909 INFO     [first_pass_crawler.py:148] Navigating to Stovall Angela
+2018-11-16 16:06:42,518,518 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 16:06:42,660,660 DEBUG    [navigator.py:37] Message: invalid argument: 'value' must be a string
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 16:06:42,660,660 INFO     [navigator.py:38] Element id: None
+2018-11-16 16:06:42,676,676 DEBUG    [navigator.py:37] Message: invalid argument: 'value' must be a string
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 16:06:42,677,677 INFO     [navigator.py:38] Element id: None
+2018-11-16 16:06:42,712,712 DEBUG    [navigator.py:45] Message: invalid argument: 'value' must be a string
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 16:06:42,713,713 INFO     [navigator.py:46] Element id: None
+2018-11-16 16:06:53,101,101 DEBUG    [navigator.py:37] Message: 
+
+2018-11-16 16:06:53,101,101 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_Name_Reports1_dgReports_ctl02_ViewCont
+2018-11-16 16:06:53,102,102 INFO     [first_pass_crawler.py:94] 'NoneType' object does not support item assignment
+2018-11-16 16:06:53,102,102 INFO     [first_pass_crawler.py:95] Report link id: None
+2018-11-16 16:06:55,423,423 INFO     [first_pass_crawler.py:148] Navigating to Kathleen Angelucci
+2018-11-16 16:07:40,886,886 INFO     [first_pass_crawler.py:148] Navigating to Suzanne Angle
+2018-11-16 16:07:52,176,176 INFO     [first_pass_crawler.py:148] Navigating to Carol Anglin
+2018-11-16 16:08:03,943,943 INFO     [first_pass_crawler.py:148] Navigating to Joseph Anglin
+2018-11-16 16:09:27,180,180 INFO     [first_pass_crawler.py:148] Navigating to William Anglin
+2018-11-16 16:10:37,482,482 INFO     [first_pass_crawler.py:148] Navigating to Derrell Anglyn
+2018-11-16 16:11:17,556,556 INFO     [first_pass_crawler.py:148] Navigating to Priscilla Ankerich
+2018-11-16 16:11:44,872,872 INFO     [first_pass_crawler.py:148] Navigating to Priscilla Ankerich
+2018-11-16 16:11:56,837,837 INFO     [first_pass_crawler.py:148] Navigating to Michael Annis
+2018-11-16 16:12:07,392,392 INFO     [navigator.py:84] Dropdown not exposed. Retrying.
+2018-11-16 16:12:07,393,393 DEBUG    [navigator.py:85] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 16:16:02,640,640 INFO     [first_pass_crawler.py:148] Navigating to Hershel Ansley
+2018-11-16 16:16:49,264,264 INFO     [first_pass_crawler.py:148] Navigating to Bobby Anthony
+2018-11-16 16:17:02,886,886 INFO     [first_pass_crawler.py:148] Navigating to Bobby Anthony
+2018-11-16 16:17:14,099,99 INFO     [first_pass_crawler.py:148] Navigating to Brittney Anthony
+2018-11-16 16:17:26,172,172 INFO     [first_pass_crawler.py:148] Navigating to Charles Anthony
+2018-11-16 16:17:37,380,380 INFO     [first_pass_crawler.py:148] Navigating to Deborah Anthony
+2018-11-16 16:18:11,640,640 INFO     [first_pass_crawler.py:148] Navigating to Donna Anthony
+2018-11-16 16:18:24,299,299 INFO     [first_pass_crawler.py:148] Navigating to Wayne Anthony
+2018-11-16 16:18:36,203,203 INFO     [first_pass_crawler.py:148] Navigating to Andrea Anthony
+2018-11-16 16:19:46,039,39 INFO     [app.py:23] Crawler exiting.
+2018-11-16 17:23:50,849,849 INFO     [app.py:19] Initializing crawler.
+2018-11-16 17:23:53,211,211 INFO     [app.py:21] Crawling...
+2018-11-16 17:23:58,628,628 INFO     [first_pass_crawler.py:150] Navigating to Walter Angel
+2018-11-16 17:25:14,876,876 INFO     [first_pass_crawler.py:150] Navigating to Stovall Angela
+2018-11-16 17:25:52,636,636 INFO     [first_pass_crawler.py:150] Navigating to Kathleen Angelucci
+2018-11-16 17:26:40,195,195 INFO     [first_pass_crawler.py:150] Navigating to Suzanne Angle
+2018-11-16 17:26:45,139,139 INFO     [first_pass_crawler.py:150] Navigating to Carol Anglin
+2018-11-16 17:26:50,120,120 INFO     [app.py:23] Crawler exiting.
+2018-11-16 17:30:58,744,744 INFO     [app.py:19] Initializing crawler.
+2018-11-16 17:30:59,991,991 INFO     [app.py:21] Crawling...
+2018-11-16 17:31:02,429,429 INFO     [first_pass_crawler.py:151] Navigating to Walter Angel
+2018-11-16 17:31:40,330,330 INFO     [first_pass_crawler.py:151] Navigating to Stovall Angela
+2018-11-16 17:31:43,952,952 DEBUG    [navigator.py:37] Message: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40,platform=Linux 4.18.10-arch1-1-ARCH x86_64)
+
+2018-11-16 17:31:43,952,952 INFO     [navigator.py:38] Element id: ctl00_ContentPlaceHolder1_NameInfo1_dlDOIs_ctl03_lnkReportInfo_DOI
+2018-11-16 17:31:55,441,441 DEBUG    [navigator.py:81] No such element. Breaking.
+2018-11-16 17:31:55,466,466 INFO     [first_pass_crawler.py:85] No report found.
+2018-11-16 17:31:56,920,920 INFO     [first_pass_crawler.py:151] Navigating to Kathleen Angelucci
+2018-11-16 17:32:21,380,380 INFO     [first_pass_crawler.py:151] Navigating to Suzanne Angle
+2018-11-16 17:32:28,836,836 INFO     [first_pass_crawler.py:151] Navigating to Carol Anglin
+2018-11-16 17:32:34,126,126 INFO     [app.py:23] Crawler exiting.
